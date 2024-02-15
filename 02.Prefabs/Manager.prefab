@@ -1,0 +1,364 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1341686162497598189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1341686162497598190}
+  - component: {fileID: 978039714}
+  m_Layer: 0
+  m_Name: Tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1341686162497598190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341686162497598189}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1341686162825738951}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &978039714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341686162497598189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ee724f5c439a4b168d756854ad28cf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstTutorialParent: {fileID: 0}
+  mergeStickTutorialParent: {fileID: 0}
+  pauseBtn: {fileID: 0}
+  tutorialFinger: {fileID: 0}
+  pauseTutorialTarget: {fileID: 0}
+  pauseTutorialOffset: {x: 0.4, y: -0.2, z: 0}
+  pauseTutorialText: {fileID: 0}
+  questTutorialParent: {fileID: 0}
+  shopSideUI: {fileID: 0}
+  pauseTutorial: 0
+  dragPhase: 0
+  questTutorial: 0
+  rvTicketTutorial: 0
+  myStickTutorial: 0
+  currentTutorial: {fileID: 0}
+--- !u!1 &1341686162825738949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1341686162825738951}
+  - component: {fileID: 1341686162825738952}
+  - component: {fileID: 1341686162725034306}
+  - component: {fileID: 3153683272279603347}
+  m_Layer: 0
+  m_Name: Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1341686162825738951
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341686162825738949}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5186321, y: -0.05055523, z: 0.43298388}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1341686162497598190}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1341686162825738952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341686162825738949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c23beef48454051b8c88375fd55a49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointerList: []
+  numberMeshs:
+  - {fileID: 1535072692304829696, guid: 7c5bc291ac7504a6c88750a0b609a5ad, type: 3}
+  - {fileID: 7783204721606112540, guid: 33c510e5ff7ac4d9d9c47e6eae9fccff, type: 3}
+  - {fileID: 1970695651543035160, guid: 3fbdd8818f92e4ff5913eed8f515693f, type: 3}
+  - {fileID: 5304741275725366324, guid: 0c6472dd7817e4db5a93de3cadc61889, type: 3}
+  - {fileID: -8218108574111239811, guid: eb573052dbc564cee9dbd9cb8fe11206, type: 3}
+  - {fileID: 6609560034938845699, guid: 156b5a582859f4cd6ac230330b27c71f, type: 3}
+  - {fileID: -8262250795786810837, guid: f748330882a3947199c3d6071bf00a4c, type: 3}
+  - {fileID: 7881155763988878482, guid: 1e32e8c30ea1848fe87b08891bcd5913, type: 3}
+  - {fileID: -7560248850480595727, guid: 84d3cbf73e6ff44a2bb96c6964adb402, type: 3}
+  - {fileID: -8739236844393676571, guid: e98b6413c64f64b7a93f513dd06a5d93, type: 3}
+  numbericUnits:
+  - {fileID: -7580740573711256489, guid: 8c881aadd2ef74206aec91a91d92beab, type: 3}
+  - {fileID: -7039080652682025693, guid: c9ccfcd50ce72452c949c385cd3c8eb0, type: 3}
+  - {fileID: 1744233250669382421, guid: c5529ce35bd9b43ad977237437787f28, type: 3}
+  - {fileID: -6060516582914178821, guid: be234510cee204f7b95e9f3f0aee9c49, type: 3}
+  hideNum: {fileID: -6330754502784739593, guid: e003fee95421a41489ccc7334572f904,
+    type: 3}
+  defMat:
+  - {fileID: 2100000, guid: 4895d79d73330452fa9c775559efcb08, type: 2}
+  goldMat:
+  - {fileID: 2100000, guid: e0d7848a574b44218a744a9e6d643303, type: 2}
+  dot: []
+  interstitialReady: 0
+  interstitialTime: 0
+  clockHandRotateSpeed: 0.45
+  clickSpeedBonus: 0.95
+  clickSpeedBonusDuration: 0.23
+  touchSpeedUp: 0
+  enableRotate: 1
+  mergeSlot: {fileID: 0}
+  mergeAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: -0.0083351135
+      value: -0.0071105957
+      inSlope: 0.5263628
+      outSlope: 0.5263628
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.24166575
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2.5221627
+      outSlope: 2.5221627
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.0541703
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  UI: {fileID: 0}
+  playUI: {fileID: 0}
+  particleUI: {fileID: 0}
+  mainCamera: {fileID: 0}
+  UICamera: {fileID: 0}
+  moneyIcon: {fileID: 0}
+  rvTicketIcon: {fileID: 0}
+  particleParent: {fileID: 0}
+  tapToSpeedUp: {fileID: 0}
+  pauseBtn: {fileID: 0}
+  stickCollectionBtn: {fileID: 0}
+  shopUI: {fileID: 0}
+  rvTicketText: {fileID: 0}
+  rpmText: {fileID: 0}
+  rvSideUIs: []
+  pointerSkinType: 0
+  UPGRADES:
+  - type: 0
+    maxLevel: 10000
+    currentLevel: 0
+    cost: 02000000040000000a000000140000001e000000280000003c00000050000000640000007800000096000000b4000000d2000000f000000018010000400100006801000090010000c2010000f4010000260200005802000094020000d00200000c030000480300008e030000d40300001a04000060040000b00400000005000050050000a0050000fa05000054060000ae060000080700006c070000d007000098080000c4090000540b0000480d0000a00f00005c1200007c15000000190000e81c00003421000080250000cc290000182e000064320000b0360000fc3a0000483f000094430000e04700002c4c000078500000c4540000105900005c5d0000a861000058660000086b00001c70000030750000007d0000d0840000a08c00007094000028a00000e0ab000098b7000038c70000d8d6000078e6000000fa0000880d0100f8240100683c0100d8530100486b0100b8820100b0ad0100c0d40100d0fb0100e0220200f0490200007102001098020020bf020030e60200400d030050340300605b03007082030080a90300
+  - type: 1
+    maxLevel: 50
+    currentLevel: 0
+    cost: 0a000000320000005a000000e60000009a01000062020000520300006a040000aa05000012070000a20800005a0a00003a0c0000420e000072100000ca1200004a150000f2170000c21a0000ba1d0000da20000022240000922700002a2b0000ea2e0000d2320000e23600001a3b00007a3f000002440000b24800008a4d000008520000d8590000a8610000786900004871000018790000e8800000b8880000889000005898000028a00000f8a70000c8af000098b7000068bf000038c7000008cf0000d8d60000
+  - type: 2
+    maxLevel: 30
+    currentLevel: 0
+    cost: f4010000e8030000980800007c150000282300004c360000a8480000c05d0000a07300004493000010bd000048ee0000e028010060670100b0ad0100d0fb0100f04902001098020030e60200503403007082030090d00300b01e0400d06c040000e204003057050060cc050090410600c0b60600f02b0700
+  - type: 3
+    maxLevel: 10000
+    currentLevel: 0
+    cost: 23000000320000005000000078000000a0000000c8000000fa0000004001000090010000f40100007602000020030000e8030000f604000040060000d0070000ec090000800c0000a00f0000c0120000e015000064190000e81c0000d0200000b824000004290000502d000000320000b0360000c43b0000d8400000ec450000004b000078500000f0550000945c000038630000406a00004871000018790000e8800000b8880000889000005898000028a00000f8a70000c8af000098b7000068bf000020cb0000d8d6000090e2000048ee000000fa0000b805010058150100f82401009834010038440100d8530100486b0100e87a0100708e0100f8a1010068b90100d8d0010048e80100b8ff0100101b020068360200c0510200007102002894020050b7020078da0200a0fd0200c8200300f043030018670300408a030068ad030090d00300a0f70300b01e0400c0450400d06c0400e0930400f0ba040000e20400100905002030050030570500407e050050a5050060cc050070f30500801a060090410600a0680600b08f0600
+  addStick:
+    type: 0
+    maxLevel: 0
+    currentLevel: 0
+    cost: 
+  speed:
+    type: 0
+    maxLevel: 0
+    currentLevel: 0
+    cost: 
+  income:
+    type: 0
+    maxLevel: 0
+    currentLevel: 0
+    cost: 
+  merge:
+    type: 0
+    maxLevel: 0
+    currentLevel: 0
+    cost: 
+  UPGRADE_SPEED_VALUE:
+  - 0
+  - 0.15
+  - 0.3
+  - 0.4
+  - 0.5
+  - 0.6
+  - 0.7
+  - 0.8
+  - 0.88
+  - 0.96
+  - 1.04
+  - 1.12
+  - 1.2
+  - 1.25
+  - 1.3
+  - 1.35
+  - 1.4
+  - 1.45
+  - 1.5
+  - 1.55
+  - 1.6
+  - 1.65
+  - 1.7
+  - 1.75
+  - 1.8
+  - 1.85
+  - 1.9
+  - 1.95
+  - 2
+  - 2.05
+  - 2.1
+  - 2.15
+  - 2.2
+  - 2.25
+  - 2.3
+  - 2.35
+  - 2.4
+  - 2.45
+  - 2.5
+  - 2.55
+  - 2.6
+  - 2.65
+  - 2.7
+  - 2.75
+  - 2.8
+  - 2.85
+  - 2.9
+  - 2.95
+  - 3
+  - 3.05
+  - 3.1
+  UPGRADE_INCOME_VAlUE:
+  - 1
+  - 1.5
+  - 2
+  - 2.5
+  - 3
+  - 3.5
+  - 4
+  - 4.5
+  - 5
+  - 5.5
+  - 6
+  - 6.5
+  - 7
+  - 7.5
+  - 8
+  - 8.5
+  - 9
+  - 9.5
+  - 10
+  - 10.5
+  - 11
+  - 11.5
+  - 12
+  - 12.5
+  - 13
+  - 13.5
+  - 14
+  - 14.5
+  - 15
+  - 15.5
+  - 16
+  mergeEase:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  isReadyOnRV: 0
+  onDragPointer: 0
+  tutorial1: 0
+  pause: 0
+  rvPause: 0
+  PopupEnable: 1
+  _ITR_MODE: 0
+  showMoneyGainText: 1
+  UpgardeRVActive: 0
+  lastFever: 0
+  lastFeverGameob: {fileID: 0}
+  tutoralFinger: {fileID: 0}
+  offset: {x: 0.15, y: -0.2, z: 0}
+  mergetheStickText: {fileID: 0}
+  moveMotionImage: {fileID: 0}
+--- !u!114 &1341686162725034306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341686162825738949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 166c300dd1fd34cadbd0fe3f541cb603, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3153683272279603347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341686162825738949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a66c234b10144261b27e51da4343c0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

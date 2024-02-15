@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703b7147bf47345b3aad3de1758ce97c, type: 3}
+  m_Name: Stick 6
+  m_EditorClassIdentifier: 
+  level: 6
+  _name: Lv.6
+  icon: {fileID: 21300000, guid: d1faa84f2b62b4d5396e20f5e11bce4a, type: 3}
+  antique_icon: {fileID: 21300000, guid: 3d4d78b6922874d71a4b2ab1b5ae3c13, type: 3}
+  obj: {fileID: 1402848601923795571, guid: 93dfe53e3ee6240eda1155d36db31796, type: 3}
+  rvWatchGoalCount: 3
